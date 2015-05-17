@@ -1,0 +1,31 @@
+一个前端js加载工具
+var Host = 'http://192.168.42.132/';
+
+aload.config({
+    host:'http://www.safe.com/',
+    js: {
+        'api': 'script/common/api',
+        'jquery': 'script/common/jquery-1.11.3.min',
+        'function': 'script/function',
+        'accountController': 'script/accountController',
+        'findMusicController': 'script/findMusicController',
+        'friendController': 'script/friendController',
+        'myMusicController': 'script/myMusicController'
+    },
+    css:{
+        'api'   :'/css/api',
+        'common':'/css/common',
+        'index' :'/css/index'
+    }
+});
+aload.js('api');
+aload.js('api');
+aload.js('api');
+aload.js('jquery');
+aload.js('function');
+aload.css('api');
+aload.css('common');
+aload.css('index');
+
+
+就像上面这样动态加载js,css文件等
