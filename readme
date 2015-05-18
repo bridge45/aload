@@ -1,6 +1,4 @@
 一个前端js加载工具
-var Host = 'http://192.168.42.132/';
-
 aload.config({
     host:'http://www.safe.com/',
     js: {
@@ -18,8 +16,6 @@ aload.config({
         'index' :'/css/index'
     }
 });
-aload.js('api');
-aload.js('api');
 aload.js('api');
 aload.js('jquery');
 aload.js('function');
